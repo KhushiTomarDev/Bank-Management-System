@@ -1,9 +1,10 @@
 
 
 import java.awt.*;
+import java.awt.event.ActionListener;
 import javax.swing.*;
 
-public class Login extends JFrame{
+public class Login extends JFrame implements ActionListener{
 
     Login() {
         setTitle("Automativ Teller Machine");
@@ -25,17 +26,38 @@ public class Login extends JFrame{
         add(cardNum);
 
         JTextField cardTextField = new JTextField();
-        cardTextField.setBounds(300,150,250,30);
+        cardTextField.setBounds(300,150,230,30);
         add(cardTextField);
 
         JLabel pin = new JLabel("PIN");
         pin.setFont(new Font("Raleway", Font.BOLD, 38));
-        pin.setBounds(300, 220, 250, 30);
+        pin.setBounds(120, 220, 250, 30);
         add(pin);
 
         JTextField pinTextField = new JTextField();
-        pinTextField.setBounds(300, 150, 250, 30);
+        pinTextField.setBounds(300, 150, 230, 30);
         add(pinTextField);
+
+        JButton login = new JButton("SIGN IN");
+        login.setBounds(300, 300, 100, 50);
+        login.setBackground(Color.BLACK);
+        login.setForeground(Color.white);
+        add(login);
+
+        JButton clear = new JButton("CLEAR");
+        clear.setBounds(430, 300, 100, 50);
+        clear.setBackground(Color.BLACK);
+        clear.setForeground(Color.white);
+        add(clear);
+     
+        JButton signup = new JButton("SIGN UP");
+        signup.setBounds(300, 350, 230, 50);
+        signup.setBackground(Color.BLACK);
+        signup.setForeground(Color.white);
+        add(signup);
+
+
+
 
         getContentPane().setBackground(Color.CYAN);
 
@@ -50,6 +72,6 @@ public class Login extends JFrame{
     
     
     public static void main(String[] args) {
-        new Login();
+        new ;
     }
 }
