@@ -12,7 +12,7 @@ public class Login extends JFrame implements ActionListener{
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/logo.jpg"));
         Image i2 = i1.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT);
         JLabel label = new JLabel(i1);
-        label.setBounds(70,10,100,100);
+        label.setBounds(60,10,100,100);
         add(label); 
 
         JLabel text = new JLabel("Welcome to ATM");
